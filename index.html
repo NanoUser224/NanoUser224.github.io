@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+      body {
+        margin: 40px;
+        background-color: bisque;
+      }
 
-<head>
-    <title>Привет!</title>
-    <link rel="stylesheet" href="bluestyle.css">
-</head>
+      div.polaroid {
+        width: 284px;
+        padding: 10px 10px 20px 10px;
+        text-align: center;
+        font-family: fantasy;
+        border: 1px solid lightslategray;
+        background-color: white;
+        box-shadow: 10px 10px 5px gray;
+      }
 
-<body>
+      div.rotate_right {
+        float: left;
+        transform: rotate(10deg);
+      }
 
-    <h1>Добрый день!</h1>
-    <p>Простая страница для Git</p>
+      div.rotate_left {
+        float: left;
+        transform: rotate(-10deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="polaroid rotate_right">
+      <img src="dvorik.jpg" alt="Московский дворик" width="284" height="213" />
+      <p>Московский дворик</p>
+    </div>
 
-    <p>Новая строка в Файле!</p>
-
-    <div><img src="img_hello_world.jpg" alt="Hello World from Space"
-        style="width:100%;max-width:960px"></div>
-
-        <div><img src="img_hello_git.jpg" alt="Hello Git" style="width:100%;maxwidth:640px"></div>
-        
-        <p>Будем считать, что так мы исправили ошибку</p>
-        
-        <p>Изменения для проверки PUSH </p>
-        
-</body>
+    <div class="polaroid rotate_left">
+      <img src="dvoyka.jpg" alt="Опять двойка" width="284" height="213" />
+      <p>Опять двойка</p>
+    </div>
+  </body>
 </html>
